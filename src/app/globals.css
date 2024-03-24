@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+    .header_top__icon_wrapper {
+        @apply bg-gray-200 rounded-md p-[6px] text-[16px] cursor-pointer hover:bg-accent hover:text-white;
+    }
+    .navbar__link:hover {
+        color: #ff8f9c;
+        transition: all 0.4s;
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    .navbar__link:after {
+        position: absolute;
+        content: "";
+        background-color: #f02a29;
+        height: 3px;
+        width: 100%;
+        bottom: -5px;
+        left: 0;
+        scale: 0;
+        transform-origin: left;
+        transition
+        : all 0.4s;
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    .navbar__link:hover::after {
+        scale: 1;
+    }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .background-image {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        z-index: -1;
+
+    }
+    
+    .custom-button {
+        margin: 1rem;
+        padding: 0.5rem 1rem; 
+        background-color: #ff0000; 
+        color: #ffffff; 
+        border: none;
+        border-radius: 50px;
+        cursor: text;
+    }
+
+    .about-section {
+        background-color: #2C3539;
+    }
 }
