@@ -34,24 +34,26 @@ let productData = [
 
 const Products = () => {
   return (
-    <div>
-        <div className="container py-20">
-            <h2 className="font-medium text-2xl pb-4">
-                <b>Produkter</b>
-            </h2>
-            <div className="grid grid-cols-1 place-items-center sm:place-items-start sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 xl:gap-x-20
-            xl:gap-y-10">
-                {productData.map((item, index) => <ProductCard
-                  key={index}
-                  img={item.img}
-                  title={item.title}
-                  desc={item.desc}
-                  inStock={item.inStock}
-                  price={item.price}
-                 />)}
+    <section id="products">
+        <div>
+            <div className="container py-20">
+                <h2 className="font-medium text-2xl pb-4">
+                    <b>Produkter</b>
+                </h2>
+                <div className="grid grid-cols-1 place-items-center sm:place-items-start sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 xl:gap-x-20
+                xl:gap-y-10">
+                    {productData.map((item, index) => <ProductCard
+                    key={index}
+                    img={item.img}
+                    title={item.title}
+                    desc={item.desc}
+                    inStock={item.inStock}
+                    price={item.price}
+                    />)}
+                </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

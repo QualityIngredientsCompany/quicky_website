@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import HeaderTop from "@/components/HeaderTop";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import HeaderTop from "../components/HeaderTop";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Products from "@/components/Products";
-import About from "@/components/About";
+import Products from "../components/Products";
+import AboutUs from "../components/AboutUs";
+import Footer from "../components/Footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,9 +30,10 @@ export default function RootLayout({
         <HeaderTop />
         <Navbar />
         <Hero />
-        <Products />
-        <About />
-        {children}
+        <AboutUs />
+        <Products />  
+        <Footer />  
+        {children} 
       </body>
     </html>
   );
