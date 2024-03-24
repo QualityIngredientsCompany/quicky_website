@@ -11,7 +11,7 @@ let productData = [
     },
     {
         img: "/hoodie-1.jpg",
-        title: "Quciky Logo Hoodie",
+        title: "Quicky Logo Hoodie",
         desc: "Hoodie med Quickys logga på",
         inStock: false,
         price: "500.00 kr",
