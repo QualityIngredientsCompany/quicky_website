@@ -12,24 +12,17 @@ let productData = [
     {
         img: "/hoodie-1.jpg",
         title: "Quicky Logo Hoodie",
-        desc: "Hoodie med Quickys logga på",
+        desc: "Hoodie med Quickys logotyp på",
         inStock: false,
         price: "500.00 kr",
     },
     {
-        img: "/quicky-2.png",
-        title: "Title",
-        desc: "placeholder",
+        img: "/quicky-sticker.png",
+        title: "Quciky Logo Sticker",
+        desc: "Klistermärke med Quickys logotyp på",
         inStock: false,
-        price: "00.00 kr",
-    },
-    {
-        img: "/quicky-3.png",
-        title: "Title",
-        desc: "placeholder",
-        inStock: false,
-        price: "00.00 kr",
-    },
+        price: "15.00 kr",
+    }
 ];
 
 const Products = () => {

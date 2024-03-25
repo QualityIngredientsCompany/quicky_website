@@ -3,15 +3,15 @@ import React from 'react'
 const Footer = () => {
   return (
     <section id="footer">
-        <div className="bg-blackish text-gray-500 text-center py-4 pb-16 md:pb-4">
+        <div className="bg-blackish text-gray-500 text-center pt-6 pb-16 md:pb-4">
             <b>
                 kontakta oss på quality.ingredients.company@gmail.company
             </b>
             <p>
-                bhgnghnbg
+                Landsvägen 66 | 076 885 95 32
             </p>
             <p>
-                address | telefon | återförsäljare
+                Återfösäljare: Gröna Livs tensta alle 38, AIK Boxning Västra Vägten 9c
             </p>
             
         </div>

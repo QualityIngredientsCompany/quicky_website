@@ -50,4 +50,10 @@
     .about-section {
         background-color: #2C3539;
     }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
 }
